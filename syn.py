@@ -6,7 +6,7 @@ cmdmkdir = "mkdir -p"
 dirdest = "/mnt/dados/share/"
 dirlocal = "/home/share/"
 dirfinal = "ssh://192.168.0.1//" + dirdest
-param1 = "! pidof unison && /usr/local/bin/unison  -logfile /var/log/log.unisync -auto -prefer"
+param1 = "! pidof unison && /usr/local/bin/unison -perms 0 -logfile /var/log/log.unisync -auto -prefer"
 diretorios=[
     'share/syncdir',
     ]
